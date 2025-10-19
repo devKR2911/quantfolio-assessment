@@ -1,0 +1,13 @@
+@use "@/assets/scss/font-sizes" as *;
+@use "@/assets/scss/device-sizes" as *;
+
+.h1 {
+  margin: 0;
+  color: var(--text-color-primary);
+  font-size: $font-size-md;
+  font-weight: $font-weight-bold;
+
+  @media screen and (min-width: $mobile) {
+    font-size: $font-size-lg;
+  }
+}

@@ -1,0 +1,9 @@
+@use "@/assets/scss/spacings" as *;
+@use "@/assets/scss/font-sizes" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-small;
+}

@@ -1,0 +1,57 @@
+.flipContainer {
+  text-align: center;
+  max-width: 600px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 0;
+
+  button {
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .flipWrapper {
+    perspective: 1000px;
+    display: inline-block; // shrink-wrap to content
+    width: 100%;
+  }
+
+  .flipCard {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+  }
+
+  .flipped .flipCard {
+    transform: rotateY(180deg);
+
+    &.vertical {
+      transform: rotateX(180deg);
+    }
+  }
+
+  .flipFace {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+
+  .front {
+    transform: rotateY(0deg);
+
+    &.vertical {
+      transform: rotateX(0deg);
+    }
+  }
+
+  .back {
+    transform: rotateY(180deg);
+    position: absolute;
+    inset: 0;
+
+    &.vertical {
+      transform: rotateX(180deg);
+    }
+  }
+}

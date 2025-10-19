@@ -1,0 +1,13 @@
+@use "@/assets/scss/spacings" as *;
+@use "@/assets/scss/device-sizes" as *;
+
+.analysisContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-large;
+
+  @media screen and (min-width: $mobile) {
+    // Tablet Specifcation
+    grid-template-columns: 1fr 1fr;
+  }
+}

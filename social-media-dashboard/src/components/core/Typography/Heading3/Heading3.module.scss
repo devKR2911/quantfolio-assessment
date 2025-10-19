@@ -1,0 +1,8 @@
+@use "@/assets/scss/font-sizes" as *;
+
+.h3 {
+  margin: 0;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: var(--text-color-primary);
+}

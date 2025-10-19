@@ -1,0 +1,39 @@
+@use "@/assets/scss/spacings" as *;
+
+.overflowContainer {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.cardContainer {
+  background: var(--color-card-bg);
+  padding: $space-large;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+
+  &:hover {
+    background: var(--color-card-bg-hover);
+  }
+
+  &.border-facebook {
+    border-top: 5px solid var(--color-facebook);
+  }
+
+  &.border-twitter {
+    border-top: 5px solid var(--color-twitter);
+  }
+
+  &.border-instagram {
+    border: 5px solid transparent;
+    border-image: var(--color-instagram);
+    border-image-slice: 1;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  &.border-youtube {
+    border-top: 5px solid var(--color-youtube);
+  }
+}

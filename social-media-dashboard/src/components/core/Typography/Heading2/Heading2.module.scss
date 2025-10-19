@@ -1,0 +1,12 @@
+@use "@/assets/scss/font-sizes" as *;
+
+.h2 {
+  margin: 0;
+  font-size: $font-size-md;
+  font-weight: $font-weight-bold;
+  color: var(--text-color-primary);
+
+  &.large {
+    font-size: $font-size-xxl;
+  }
+}

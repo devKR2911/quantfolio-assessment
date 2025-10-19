@@ -1,0 +1,30 @@
+@use "@/assets/scss/font-sizes" as *;
+
+.p {
+  margin: 0;
+  color: var(--text-color-secondary);
+  font-size: $font-size-sm;
+  font-weight: $font-weight-regular;
+
+  &.b {
+    font-weight: $font-weight-bold;
+  }
+
+  &.primary {
+    color: var(--text-color-primary);
+  }
+
+  &.light {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-light;
+    letter-spacing: 5px;
+  }
+
+  &.small {
+    font-size: $font-size-xs;
+  }
+
+  &.centered {
+    text-align: center;
+  }
+}

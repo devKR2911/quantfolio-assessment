@@ -1,0 +1,36 @@
+@use "@/assets/scss/font-sizes" as *;
+@use "@/assets/scss/spacings" as *;
+
+// Helper classes with color and icon
+.info {
+  font-size: $font-size-xs;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-small;
+  font-weight: $font-weight-bold;
+  margin: 0;
+
+  &::before {
+    width: 8px;
+    height: 4px;
+    position: relative;
+    top: -8px;
+  }
+
+  &.success {
+    color: var(--color-lime-green);
+
+    &::before {
+      content: url("@/assets/images/icon-up.svg");
+    }
+  }
+
+  &.danger {
+    color: var(--color-bright-red);
+
+    &::before {
+      content: url("@/assets/images/icon-down.svg");
+    }
+  }
+}

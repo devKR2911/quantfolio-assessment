@@ -1,0 +1,23 @@
+@use "@/assets/scss/spacings" as *;
+@use "@/assets/scss/device-sizes" as *;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $space-small;
+
+  @media screen and (min-width: $mobile) {
+    flex-direction: row;
+    align-items: center;
+    gap: $space-large;
+  }
+
+  .horizontalLine {
+    display: block;
+
+    @media screen and (min-width: $mobile) {
+      display: none;
+    }
+  }
+}

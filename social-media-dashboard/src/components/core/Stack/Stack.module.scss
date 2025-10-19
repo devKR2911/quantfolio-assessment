@@ -1,0 +1,22 @@
+@use "@/assets/scss/spacings" as *;
+
+.stack {
+  display: flex;
+  flex-direction: column;
+
+  &.space-flush {
+    gap: 0;
+  }
+
+  &.space-small {
+    gap: $space-small;
+  }
+
+  &.space-medium {
+    gap: $space-medium;
+  }
+
+  &.space-large {
+    gap: $space-large;
+  }
+}

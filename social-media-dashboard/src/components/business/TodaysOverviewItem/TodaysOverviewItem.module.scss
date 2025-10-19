@@ -1,0 +1,7 @@
+@use "@/assets/scss/spacings" as *;
+
+.overviewRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
