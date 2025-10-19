@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd "$(dirname "$0")/.."
+echo "✅ Husky pre-commit hook running..."
+npx lint-staged
